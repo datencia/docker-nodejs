@@ -1,0 +1,8 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker build -t datencia/nodejs .
+  - docker run datencia/nodejs /bin/sh -c "node -v && npm -v && yarn -v"
