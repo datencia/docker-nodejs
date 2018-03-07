@@ -6,7 +6,7 @@ ENV NPM_VERSION=5.6.0 \
     YARN_VERSION=1.3.2
 
 RUN apt-get update && \
-    apt-get install -y curl ca-certificates build-essential --no-install-recommends && \
+    apt-get install -y curl python ca-certificates build-essential --no-install-recommends && \
     curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
     apt-get update && \
     apt-get install -y nodejs --no-install-recommends && \
